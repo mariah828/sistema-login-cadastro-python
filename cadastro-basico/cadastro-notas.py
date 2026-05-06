@@ -3,8 +3,8 @@ def cadastrar():
     users = []
     user = input("Digite o nome de usuário: ")
     users.append(user)
-    senha = int(input("Digite a senha: "))
-    senhaconfirm = int(input("Confirme a senha: "))
+    senha = input("Digite a senha: ")
+    senhaconfirm = input("Confirme a senha: ")
     if senha != senhaconfirm:
         print("Senhas devem ser iguais")
         raise Exception("ERRO")
@@ -12,7 +12,7 @@ def cadastrar():
 
     def logar():
         log = input("Digite o nome do usuário: ")
-        pas = int(input("Digite a senha: "))
+        pas = input("Digite a senha: ")
         if log != user or pas != senha: 
             print("Usuário ou senha incorreto!")
             raise Exception("ERRO")
